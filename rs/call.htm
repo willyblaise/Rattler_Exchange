@@ -1,0 +1,33 @@
+<html>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Shift_JIS">
+<TITLE>Resize Image</TITLE>
+</HEAD>
+<BODY TEXT="#000000" bgcolor="white" LINK="#0000EE" VLINK="#551A8B" ALINK="#FF0000">
+<table cols=1 border=0 width="100%" style="border:0px" align=center><tr><td style="border:0px;background-color:transparent" >
+<center>
+<p><a href="../rszim.html">back</a>
+<p>
+Please enter your image files. <br>The supported files are jpeg, gif, png, gd and gd2.<p>
+<form name="inform" action="rszim.cgi" method=post enctype="multipart/form-data">
+<input type=file size=40 name="0"><br>
+<br><table cols=1 width="10%" border=0 align=center>
+<tr><td nowrap>
+<input type=radio name=target_type value=xy_pixel checked> 
+Width pixel<input type=text size=5 name=target_pw value=100>pixel 
+Height pixel<input type=text size=5 name=target_ph value=100>pixel<br>
+<input type=radio name=target_type value=xy_ratio> 
+
+Width ratio<input type=text size=5 name=target_rw value=50>% 
+Height ratio<input type=text size=5 name=target_rh value=50>%<br>
+<input type=radio name=target_type value=area_ratio> 
+Area ratio<input type=text size=5 name=target_rarea value=50>%<br>
+<br><input type="submit" name="go" value="Convert" >
+</td></tr>
+</table>
+</center>
+<input type=hidden name=mode value=resize></form>
+<div align="right"><i>rszim.cgi Ver. 1.001</i></div>
+<div align="right"><i>Copyright(C) 2005, <a href="http://www.hidekik.com/en/" target="_blank">hidekik.com</a></i></div>
+
+</td></tr></table></body></html>
